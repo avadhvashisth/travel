@@ -1,0 +1,228 @@
+1366 x 768
+
+@font-face {
+font-family: "Barbershop in Thailand";
+src: url("fonts/Barbershop in Thailand.ttf");
+}
+
+@font-face {
+font-family: "Extra Mile";
+src: url("fonts/Extra Mile - Demo.ttf");
+}
+
+@font-face {
+font-family: "keney";
+src: url("fonts/kenyan coffee bd.ttf");
+}
+
+@font-face {
+font-family: "sun valley";
+src: url("fonts/Sun Valley - Demo.ttf");
+}
+
+@font-face {
+font-family: "nexa light";
+src: url("fonts/Nexa Light.otf");
+}
+
+@font-face {
+font-family: "nexa bol";
+src: url("fonts/Nexa Bold.otf");
+}
+
+body{
+    background-color: black;
+}
+
+.navbar-brand:hover{
+    color: white;
+    background-color: darkslategray;
+}
+
+.navbar-brand{
+    border-left: 30px solid DarkSlateGray;
+    font-family: Extra Mile;
+    font-size: 40px;
+    color: DarkSlateGray;
+}
+
+.navbar-nav{
+    float: right;
+    font-family: nexa bol;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.container{
+    background-color: white;
+}
+
+#bgImg{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: -1;
+}
+
+#bgi {
+    border-top: 5px dotted skyblue;
+    text-align: center;
+    color: white;
+    background-color: rgba(20,20,20,1);
+    margin-top: 480px;
+    padding: 20px 30px;
+    -webkit-clip-path: polygon(10% 10%, 35% 10%, 40% 0%, 60% 0%, 65% 10%, 90% 10%, 100% 50%, 100% 100%, 0 100%,0 50%);
+    clip-path: polygon(10% 10%, 35% 10%, 40% 0%, 60% 0%, 65% 10%, 90% 10%, 100% 50%, 100% 100%, 0 100%,0 50%);
+}
+
+#bgi img{
+    height: 20px;
+}
+
+#bgi h2{
+    font-family: sun valley;
+    margin: 0px;
+}
+
+#bgi h1{
+    margin: 5px;
+    font-family: nexa light;
+}
+
+#explore{
+    padding-top: 50px;
+    background: url(image/seasons/moun1.jpg) center;
+    background-size: cover;
+    height: 740px;
+    width: 100%;
+    background-color: rgba(20,20,20,1);
+}
+
+#explore img{
+    display: flex;
+    margin: auto;
+    width: 40%;
+    padding: 11px;
+    opacity: 0.7;
+    transition: opacity 1s;
+}
+
+#explore img:hover{
+    position: relative;
+    opacity: 1;
+    animation: myScale 0.3s;
+    animation-fill-mode: forwards;
+    -webkit-animation: myScale 0.3s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation: myScale 0.3s;
+    -mox-animation-fill-mode: forwards;
+}
+
+#top{
+    background: url(image/seasons/mouninvert.jpg) center;
+    background-size: cover;
+    height: 740px;
+    width: 100%;
+    background-color: rgba(20,20,20,1);
+    text-align: center;
+}
+
+#top h1{
+    margin: 0px;
+    padding-top: 80px;
+    font-family: nexa light;
+    text-align: center;
+}
+
+#top img{
+    float: left;
+    width: 24%;
+    margin: 5px;
+}
+
+#top img:hover{
+    position: relative;
+    animation: myScales 0.4s;
+    animation-fill-mode: forwards;
+    -webkit-animation: myScales 0.4s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation: myScales 0.4s;
+    -mox-animation-fill-mode: forwards;
+}
+
+#top-images{
+    display: inline-block;
+    margin: auto;
+    margin-top: 70px;
+}
+
+#top a{
+    position: absolute;
+    right:3%;
+}
+
+@keyframes myScale{
+    0% {bottom: 0px;}
+    100%{bottom: 5px;}
+}
+@-webkit-keyframes myScale{
+    0% {bottom: 0px;}
+    100%{bottom: 5px;}
+}
+@-moz-keyframes myScales{
+    0% {bottom: 0px;}
+    100%{bottom: 5px;}
+}
+
+@keyframes myScales{
+    0% {bottom: 0px;    box-shadow: 0px 0px;}
+    100%{bottom: 10px;   box-shadow: 0px 10px 10px;}
+}
+@-webkit-keyframes myScales{
+    0% {bottom: 0px;}
+    100%{bottom: 5px;}
+}
+@-moz-keyframes myScales{
+    0% {bottom: 0px;}
+    100%{bottom: 5px;}
+}
+
+@media screen
+and (max-width : 500px){
+    
+    #bgi h1{
+        font-size: 20px;
+        margin: 0px;
+    }   
+
+    #bgi h2{
+        font-size: 15px;
+        margin: 0px;
+    }
+
+    #bgImg{
+        top: 30%;
+    }
+
+    #bgi{
+        border-top: 3px dotted skyblue;
+    }
+    
+    #explore{
+        height: 500px;
+        padding-top: 20px;
+    }
+    
+    #explore img{
+        width: 90%;
+    }
+    
+    #top{
+        height: 800px;
+    }
+    
+    #top img{
+        width: 47%;
+    }
+    
+}
