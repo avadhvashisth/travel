@@ -57,7 +57,7 @@ body{
     font-size: 15px;
 }
 
-.container{
+#navcolor{
     background-color: white;
 }
 
@@ -69,7 +69,7 @@ body{
 }
 
 #bgi {
-    border-top: 5px dotted skyblue;
+    /*border-top: 5px dotted skyblue;*/
     text-align: center;
     color: white;
     background-color: rgba(20,20,20,1);
@@ -141,16 +141,23 @@ body{
 #top img{
     float: left;
     width: 24%;
+    height: 400px;
     margin: 5px;
+    object-fit: cover;
+}
+
+.obj-fi{
+    object-fit: cover;
+    height: 400px;
 }
 
 #top img:hover{
     position: relative;
-    animation: myScales 0.4s;
+    animation: myScales 0.3s;
     animation-fill-mode: forwards;
-    -webkit-animation: myScales 0.4s;
+    -webkit-animation: myScales 0.3s;
     -webkit-animation-fill-mode: forwards;
-    -moz-animation: myScales 0.4s;
+    -moz-animation: myScales 0.3s;
     -mox-animation-fill-mode: forwards;
 }
 
@@ -163,6 +170,41 @@ body{
 #top a{
     position: absolute;
     right:3%;
+}
+
+#footer{
+    background: url(image/seasons/moun1.jpg) center;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    background-color: rgba(20,20,20,1);
+    text-align: center;
+}
+
+#footer h1{
+    margin: 0px;
+    padding-top: 20px;
+    color: white;
+    font-family: Barbershop in Thailand;
+}
+
+#footer img{
+    width: 50px;
+    margin: 6px;
+    filter: grayscale(0%)
+}
+
+#footer img:hover{
+    filter: grayscale(80%);
+}
+
+#footer hr{
+    opacity: 0.5;
+}
+
+#footer p{
+    color: white;
+    font-family: nexa;
 }
 
 @keyframes myScale{
@@ -209,7 +251,7 @@ and (max-width : 500px){
     }
 
     #bgi{
-        border-top: 3px dotted skyblue;
+        /*border-top: 3px dotted skyblue;*/
     }
     
     #explore{
@@ -227,6 +269,7 @@ and (max-width : 500px){
     
     #top img{
         width: 47%;
+        height: 250px;
     }
     
 }
