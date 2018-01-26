@@ -182,10 +182,11 @@ body{
 }
 
 #footer h1{
+    font-size: 40px;
     margin: 0px;
     padding-top: 20px;
     color: white;
-    font-family: Barbershop in Thailand;
+    font-family: sun valley;
 }
 
 #footer img{
