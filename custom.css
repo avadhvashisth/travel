@@ -172,10 +172,11 @@ body{
     right:3%;
 }
 
+
 #footer{
     background: url(image/seasons/moun1.jpg) center;
     background-size: cover;
-    height: 200px;
+    height: 600px;
     width: 100%;
     background-color: rgba(20,20,20,1);
     text-align: center;
@@ -200,6 +201,7 @@ body{
 }
 
 #footer hr{
+    width: 50%;
     opacity: 0.5;
 }
 
