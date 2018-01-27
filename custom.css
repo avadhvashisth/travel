@@ -71,8 +71,8 @@ body{
 #bgi {
     /*border-top: 5px dotted skyblue;*/
     text-align: center;
-    color: white;
-    background-color: rgba(20,20,20,1);
+    color: darkslategray;
+    background-color: rgba(237,237,237,1);
     margin-top: 480px;
     padding: 20px 30px;
     -webkit-clip-path: polygon(10% 10%, 35% 10%, 40% 0%, 60% 0%, 65% 10%, 90% 10%, 100% 50%, 100% 100%, 0 100%,0 50%);
@@ -80,6 +80,7 @@ body{
 }
 
 #bgi img{
+    filter: invert(100%);
     height: 20px;
 }
 
@@ -90,7 +91,7 @@ body{
 
 #bgi h1{
     margin: 5px;
-    font-family: nexa light;
+    font-family: nexa;
 }
 
 #explore{
@@ -258,8 +259,8 @@ and (max-width : 500px){
     }
     
     #explore{
-        height: 500px;
-        padding-top: 20px;
+        height: 600px;
+        padding-top: 40px;
     }
     
     #explore img{
