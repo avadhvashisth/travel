@@ -1,21 +1,14 @@
 <!DOCTYPE html>
-<html lang="">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Starter Template for Bootstrap 3.3.7</title>
-    <link rel="shortcut icon" href="">
+    <title>Travel</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 
     <style>body{padding-top:50px;}.starter-template{padding:40px 15px;text-align:center;}</style>
     <link rel="stylesheet" href="custom.css">
-    <!--[if IE]>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 
 <body>
@@ -98,7 +91,7 @@
     </script>
     <script>
     //logo color change
-     /*   window.onscroll = function() {myFunction()};
+        window.onscroll = function() {myFunction()};
 
         function myFunction() {
             if (document.body.scrollTop > 530 || document.documentElement.scrollTop > 530) {
@@ -109,7 +102,7 @@
                 document.getElementById("logo").style.color="darkslategray";
                 document.getElementById("logo").style.backgroundColor="white";
             }
-        } */   
+        }    
     //maps
     function initMap() {
         var uluru = {lat: -25.363, lng: 131.044};
@@ -122,32 +115,6 @@
           map: map
         });
       }    
-    
-    //smooth scrolling   
-    $(document).ready(function(){
-      // Add smooth scrolling to all links
-      $("a").on('click', function(event) {
-
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function(){
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-    });
 </script>
 </body>
 </html>
